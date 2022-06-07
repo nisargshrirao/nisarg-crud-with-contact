@@ -10,7 +10,7 @@ const express = require("express");
 const app = express();
 database.connect();
 
-// remove the cors 
+// remove the ns changes here 
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
