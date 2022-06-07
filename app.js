@@ -1,7 +1,6 @@
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 const logger = require("morgan");
 const database = require("./middlewares/database");
 const error = require("./middlewares/error");
@@ -10,8 +9,8 @@ const routes = require("./routes");
 const express = require("express");
 const app = express();
 database.connect();
-// here is set the cron npm 
-app.use(cors());
+
+// remove the cors 
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
