@@ -10,7 +10,7 @@ const routes = require("./routes");
 const express = require("express");
 const app = express();
 database.connect();
-
+// here is set the cron npm 
 app.use(cors());
 app.use(logger("dev"));
 app.use(bodyParser.json());

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+// here set the database url 
 const { dbUri } = require('../config');
 
 const connect = async () => {
